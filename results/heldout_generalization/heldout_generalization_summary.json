@@ -1,0 +1,65 @@
+{
+  "phase": 15,
+  "name": "heldout_generalization",
+  "model": "gpt2",
+  "evaluation_split": "heldout",
+  "heldout_pairs": 40,
+  "frozen_circuit": [
+    "L10H4",
+    "L8H9",
+    "L9H2"
+  ],
+  "frozen_single_head": "L10H4",
+  "selection_source": "Phase 13 and Phase 14 discovery split",
+  "heldout_used_for_selection": false,
+  "heldout_used_for_optimization": false,
+  "model_weights_modified": false,
+  "summary": [
+    {
+      "condition": "single_head",
+      "mean": 0.17319204597696852,
+      "median": 0.1683863084157209,
+      "std": 0.06689475108026702,
+      "min": 0.0517638501636562,
+      "max": 0.3228298624632015,
+      "positive_fraction": 1.0,
+      "n": 40
+    },
+    {
+      "condition": "three_head_circuit",
+      "mean": 0.4841127346996684,
+      "median": 0.473154348815792,
+      "std": 0.10885305837464085,
+      "min": 0.24636951554815475,
+      "max": 0.7042893606424703,
+      "positive_fraction": 1.0,
+      "n": 40
+    },
+    {
+      "condition": "circuit_minus_single",
+      "mean": 0.3109206887226999,
+      "median": 0.32394441357595705,
+      "std": 0.07241172222275478,
+      "min": 0.1702048535008664,
+      "max": 0.4822043910603525,
+      "positive_fraction": 1.0,
+      "n": 40
+    }
+  ],
+  "decision": {
+    "decision": "HELDOUT_GENERALIZATION_SUPPORT",
+    "mean_single_recovery": 0.17319204597696852,
+    "mean_circuit_recovery": 0.4841127346996684,
+    "mean_circuit_improvement": 0.3109206887226999,
+    "positive_circuit_fraction": 1.0,
+    "circuit_better_fraction": 1.0,
+    "frozen_single_head": "L10H4",
+    "frozen_circuit": [
+      "L10H4",
+      "L8H9",
+      "L9H2"
+    ],
+    "heldout_pairs": 40,
+    "model_weights_modified": false
+  }
+}

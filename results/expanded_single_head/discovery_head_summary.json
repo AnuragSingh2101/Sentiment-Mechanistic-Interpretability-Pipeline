@@ -1,0 +1,232 @@
+{
+  "phase": 13,
+  "name": "discovery_single_head_activation_patching",
+  "model": "gpt2",
+  "dataset": {
+    "split": "discovery",
+    "pairs": 60,
+    "heads_evaluated": 144,
+    "layers": 12,
+    "heads_per_layer": 12
+  },
+  "patching": {
+    "activation": "attention_head_output",
+    "hook": "blocks.{layer}.attn.hook_z",
+    "position": "final_prediction_position",
+    "alignment_strategy": "final_position_only",
+    "metric": "logit_difference",
+    "recovery_formula": "(patched - corrupted) / (clean - corrupted)"
+  },
+  "results": {
+    "rows": 8640,
+    "expected_rows": 8640,
+    "top_heads": [
+      {
+        "rank": 1,
+        "layer": 10,
+        "head": 4,
+        "head_label": "L10H4",
+        "mean_recovery": 0.1770275339423595,
+        "median_recovery": 0.16969065230171473,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.2
+      },
+      {
+        "rank": 2,
+        "layer": 8,
+        "head": 9,
+        "head_label": "L8H9",
+        "mean_recovery": 0.16242798688443155,
+        "median_recovery": 0.15474858395066374,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.06666666666666667
+      },
+      {
+        "rank": 3,
+        "layer": 9,
+        "head": 2,
+        "head_label": "L9H2",
+        "mean_recovery": 0.16010510885307838,
+        "median_recovery": 0.12729177974197228,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.13333333333333333
+      },
+      {
+        "rank": 4,
+        "layer": 9,
+        "head": 10,
+        "head_label": "L9H10",
+        "mean_recovery": 0.1263565894814992,
+        "median_recovery": 0.11143281715242818,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.016666666666666666
+      },
+      {
+        "rank": 5,
+        "layer": 7,
+        "head": 5,
+        "head_label": "L7H5",
+        "mean_recovery": 0.08255478962637966,
+        "median_recovery": 0.08180553037193239,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 6,
+        "layer": 11,
+        "head": 9,
+        "head_label": "L11H9",
+        "mean_recovery": 0.07375679816273245,
+        "median_recovery": 0.0694702803213602,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 7,
+        "layer": 9,
+        "head": 3,
+        "head_label": "L9H3",
+        "mean_recovery": 0.07026271962495062,
+        "median_recovery": 0.06684083595924456,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 8,
+        "layer": 6,
+        "head": 7,
+        "head_label": "L6H7",
+        "mean_recovery": 0.06903543323856143,
+        "median_recovery": 0.0692535302518405,
+        "positive_recovery_fraction": 0.9833333333333333,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 9,
+        "layer": 6,
+        "head": 3,
+        "head_label": "L6H3",
+        "mean_recovery": 0.061016181952355523,
+        "median_recovery": 0.062714259286481,
+        "positive_recovery_fraction": 0.9833333333333333,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 10,
+        "layer": 8,
+        "head": 4,
+        "head_label": "L8H4",
+        "mean_recovery": 0.05612208304255479,
+        "median_recovery": 0.05833285014271046,
+        "positive_recovery_fraction": 0.9666666666666667,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 11,
+        "layer": 8,
+        "head": 5,
+        "head_label": "L8H5",
+        "mean_recovery": 0.05610365381714782,
+        "median_recovery": 0.049878395758655256,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 12,
+        "layer": 10,
+        "head": 9,
+        "head_label": "L10H9",
+        "mean_recovery": 0.053117298720407914,
+        "median_recovery": 0.05213249230550745,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 13,
+        "layer": 8,
+        "head": 6,
+        "head_label": "L8H6",
+        "mean_recovery": 0.04818122342711489,
+        "median_recovery": 0.04342913943498862,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 14,
+        "layer": 10,
+        "head": 1,
+        "head_label": "L10H1",
+        "mean_recovery": 0.03909502126870536,
+        "median_recovery": 0.033230933414379625,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 15,
+        "layer": 8,
+        "head": 11,
+        "head_label": "L8H11",
+        "mean_recovery": 0.0366623817670291,
+        "median_recovery": 0.033051491125081184,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 16,
+        "layer": 6,
+        "head": 4,
+        "head_label": "L6H4",
+        "mean_recovery": 0.03546036054413478,
+        "median_recovery": 0.030380379249348666,
+        "positive_recovery_fraction": 0.9333333333333333,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 17,
+        "layer": 7,
+        "head": 1,
+        "head_label": "L7H1",
+        "mean_recovery": 0.025690879055439663,
+        "median_recovery": 0.024352964719918265,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 18,
+        "layer": 6,
+        "head": 10,
+        "head_label": "L6H10",
+        "mean_recovery": 0.024111529361302075,
+        "median_recovery": 0.019873192788640352,
+        "positive_recovery_fraction": 0.9333333333333333,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 19,
+        "layer": 9,
+        "head": 1,
+        "head_label": "L9H1",
+        "mean_recovery": 0.022988847488293367,
+        "median_recovery": 0.021197115689927215,
+        "positive_recovery_fraction": 1.0,
+        "strong_recovery_fraction": 0.0
+      },
+      {
+        "rank": 20,
+        "layer": 10,
+        "head": 5,
+        "head_label": "L10H5",
+        "mean_recovery": 0.021181688455064247,
+        "median_recovery": 0.02078698839273105,
+        "positive_recovery_fraction": 0.95,
+        "strong_recovery_fraction": 0.0
+      }
+    ]
+  },
+  "heldout_protection": {
+    "heldout_loaded": false,
+    "heldout_used_for_selection": false,
+    "heldout_used_for_ranking": false
+  },
+  "model_weights_modified": false
+}

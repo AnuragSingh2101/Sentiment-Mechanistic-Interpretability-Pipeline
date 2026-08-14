@@ -1,0 +1,174 @@
+{
+  "phase": 18,
+  "name": "final_research_audit",
+  "frozen_baseline": "L10H4",
+  "frozen_circuit": [
+    "L10H4",
+    "L8H9",
+    "L9H2"
+  ],
+  "discovery_pairs": 60,
+  "heldout_pairs": 40,
+  "decision": "AUDIT_PASS_WITH_WARNINGS",
+  "pass_count": 30,
+  "warning_count": 1,
+  "failure_count": 0,
+  "checks": [
+    {
+      "name": "Phase 10 decision",
+      "status": "PASS",
+      "detail": "results\\robustness\\robustness_decision.json"
+    },
+    {
+      "name": "Phase 14 results",
+      "status": "PASS",
+      "detail": "results\\expanded_multi_head\\discovery_multi_head_results.csv"
+    },
+    {
+      "name": "Phase 14 summary",
+      "status": "PASS",
+      "detail": "results\\expanded_multi_head\\discovery_multi_head_summary.csv"
+    },
+    {
+      "name": "Phase 14 JSON",
+      "status": "PASS",
+      "detail": "results\\expanded_multi_head\\discovery_multi_head_summary.json"
+    },
+    {
+      "name": "Phase 15 results",
+      "status": "PASS",
+      "detail": "results\\heldout_generalization\\heldout_generalization_results.csv"
+    },
+    {
+      "name": "Phase 15 JSON",
+      "status": "PASS",
+      "detail": "results\\heldout_generalization\\heldout_generalization_summary.json"
+    },
+    {
+      "name": "Phase 16 primary",
+      "status": "PASS",
+      "detail": "results\\heldout_statistics\\heldout_primary_statistics.csv"
+    },
+    {
+      "name": "Phase 16 bootstrap",
+      "status": "PASS",
+      "detail": "results\\heldout_statistics\\heldout_bootstrap_statistics.csv"
+    },
+    {
+      "name": "Phase 16 permutation",
+      "status": "PASS",
+      "detail": "results\\heldout_statistics\\heldout_permutation_statistics.csv"
+    },
+    {
+      "name": "Phase 16 JSON",
+      "status": "PASS",
+      "detail": "results\\heldout_statistics\\phase16_statistical_summary.json"
+    },
+    {
+      "name": "Phase 17 activation",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\candidate_head_activation_summary.csv"
+    },
+    {
+      "name": "Phase 17 token positions",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\token_position_activation.csv"
+    },
+    {
+      "name": "Phase 17 layer progression",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\layer_progression.csv"
+    },
+    {
+      "name": "Phase 17 interpretation",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\mechanistic_interpretation.md"
+    },
+    {
+      "name": "Phase 17 summary",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\mechanistic_summary.json"
+    },
+    {
+      "name": "Phase 17 correlation",
+      "status": "PASS",
+      "detail": "results\\mechanistic\\activation_recovery_correlation.csv"
+    },
+    {
+      "name": "Phase 14 candidate heads",
+      "status": "PASS",
+      "detail": "['L10H4', 'L8H9', 'L9H2']"
+    },
+    {
+      "name": "Phase 14 frozen circuit",
+      "status": "PASS",
+      "detail": "L10H4 + L8H9 + L9H2"
+    },
+    {
+      "name": "Phase 14 discovery count",
+      "status": "PASS",
+      "detail": "60"
+    },
+    {
+      "name": "Held-out pair count",
+      "status": "PASS",
+      "detail": "40"
+    },
+    {
+      "name": "Circuit beats single on held-out pairs",
+      "status": "PASS",
+      "detail": "40/40"
+    },
+    {
+      "name": "Phase 16 decision",
+      "status": "PASS",
+      "detail": "HELDOUT_STATISTICAL_SUPPORT"
+    },
+    {
+      "name": "Candidate activation schema",
+      "status": "PASS",
+      "detail": "3 rows"
+    },
+    {
+      "name": "Frozen heads present",
+      "status": "PASS",
+      "detail": "['L10H4', 'L8H9', 'L9H2']"
+    },
+    {
+      "name": "Interpretation section: Activation-difference evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Interpretation section: Causal evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Interpretation section: Held-out evidence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Interpretation section: Limitations",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Interpretation section: Conclusion",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Phase 13 normalized_recovery",
+      "status": "WARN",
+      "detail": "Missing; correlation cannot be computed from this artifact."
+    },
+    {
+      "name": "Discovery/held-out IDs disjoint",
+      "status": "PASS",
+      "detail": "60 / 40"
+    }
+  ],
+  "known_issue": "Phase 17 reported missing normalized_recovery in the Phase 13 detailed artifact. This audit does not invent or reconstruct it."
+}

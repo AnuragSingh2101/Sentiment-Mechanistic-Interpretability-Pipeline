@@ -1,0 +1,356 @@
+{
+  "phase": 17,
+  "name": "mechanistic_interpretation",
+  "model": "gpt2",
+  "dataset": {
+    "expanded_dataset": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\data\\raw\\expanded_sentiment_pairs.csv",
+    "discovery_dataset": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\data\\splits\\discovery_pairs.csv",
+    "discovery_pairs": 60,
+    "heldout_pairs_loaded": 0,
+    "heldout_pairs_expected": 40
+  },
+  "frozen_circuit": {
+    "heads": [
+      "L10H4",
+      "L8H9",
+      "L9H2"
+    ],
+    "condition": "L10H4 + L8H9 + L9H2"
+  },
+  "method": {
+    "new_activation_patching": false,
+    "new_head_selection": false,
+    "new_circuit_search": false,
+    "model_weights_modified": false,
+    "activation_difference": true,
+    "token_position_analysis": true
+  },
+  "outputs": {
+    "candidate_head_activation_summary": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\candidate_head_activation_summary.csv",
+    "token_position_activation": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\token_position_activation.csv",
+    "layer_progression": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\layer_progression.csv",
+    "phase13_candidate_head_evidence": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\phase13_candidate_head_evidence.csv",
+    "phase14_circuit_evidence": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\phase14_circuit_evidence.csv",
+    "activation_recovery_correlation": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\activation_recovery_correlation.csv",
+    "mechanistic_interpretation": "C:\\Users\\hp\\OneDrive\\Desktop\\mechanistic-interpretability\\results\\mechanistic\\mechanistic_interpretation.md"
+  },
+  "representative_example": {
+    "pair_id": 2,
+    "domain": "movie",
+    "clean": "The film was wonderful.",
+    "corrupted": "The film was awful.",
+    "clean_tokens": [
+      "<|endoftext|>",
+      "Review",
+      ":",
+      " The",
+      " film",
+      " was",
+      " wonderful",
+      ".",
+      "\n",
+      "Sent",
+      "iment",
+      ":"
+    ],
+    "corrupted_tokens": [
+      "<|endoftext|>",
+      "Review",
+      ":",
+      " The",
+      " film",
+      " was",
+      " awful",
+      ".",
+      "\n",
+      "Sent",
+      "iment",
+      ":"
+    ]
+  },
+  "candidate_activation_summary": [
+    {
+      "layer": 10,
+      "head": 4,
+      "head_label": "L10H4",
+      "mean_difference_norm": 0.2446346528828144,
+      "median_difference_norm": 0.22313521802425385,
+      "mean_max_difference_norm": 1.105392717818419,
+      "mean_absolute_difference": 0.024170152423903347,
+      "mean_signed_difference": 0.0006233363151200896,
+      "n_pairs": 60
+    },
+    {
+      "layer": 8,
+      "head": 9,
+      "head_label": "L8H9",
+      "mean_difference_norm": 0.23174144526322682,
+      "median_difference_norm": 0.22699102014303207,
+      "mean_max_difference_norm": 0.7872972980141639,
+      "mean_absolute_difference": 0.023555281789352497,
+      "mean_signed_difference": 1.4483207799761051e-05,
+      "n_pairs": 60
+    },
+    {
+      "layer": 9,
+      "head": 2,
+      "head_label": "L9H2",
+      "mean_difference_norm": 0.1806254519770543,
+      "median_difference_norm": 0.16724500060081482,
+      "mean_max_difference_norm": 0.7907927992443243,
+      "mean_absolute_difference": 0.018123177586433788,
+      "mean_signed_difference": -0.0003545366902471869,
+      "n_pairs": 60
+    }
+  ],
+  "phase13_candidate_evidence": [
+    {
+      "rank": 1,
+      "layer": 10,
+      "head": 4,
+      "head_label": "L10H4",
+      "mean_recovery": 0.1770275339423595,
+      "median_recovery": 0.1696906523017147,
+      "std_recovery": 0.0767282651166565,
+      "min_recovery": 0.0393743665764116,
+      "max_recovery": 0.3539211242067089,
+      "positive_recovery_fraction": 1.0,
+      "strong_recovery_fraction": 0.2,
+      "full_recovery_fraction": 0.0,
+      "n_pairs": 60
+    },
+    {
+      "rank": 2,
+      "layer": 8,
+      "head": 9,
+      "head_label": "L8H9",
+      "mean_recovery": 0.1624279868844315,
+      "median_recovery": 0.1547485839506637,
+      "std_recovery": 0.0693302427758982,
+      "min_recovery": 0.0664028019021042,
+      "max_recovery": 0.5510539437896645,
+      "positive_recovery_fraction": 1.0,
+      "strong_recovery_fraction": 0.0666666666666666,
+      "full_recovery_fraction": 0.0166666666666666,
+      "n_pairs": 60
+    },
+    {
+      "rank": 3,
+      "layer": 9,
+      "head": 2,
+      "head_label": "L9H2",
+      "mean_recovery": 0.1601051088530783,
+      "median_recovery": 0.1272917797419722,
+      "std_recovery": 0.1213493462642312,
+      "min_recovery": 0.0326352409916136,
+      "max_recovery": 0.9231640979147778,
+      "positive_recovery_fraction": 1.0,
+      "strong_recovery_fraction": 0.1333333333333333,
+      "full_recovery_fraction": 0.0166666666666666,
+      "n_pairs": 60
+    }
+  ],
+  "phase14_evidence": [
+    {
+      "rank": 1,
+      "condition": "L10H4 + L8H9 + L9H2",
+      "n_heads": 3,
+      "mean_recovery": 0.4983251384182862,
+      "median_recovery": 0.447932999038574,
+      "std_recovery": 0.2160160163958896,
+      "min_recovery": 0.193564674561645,
+      "max_recovery": 1.8278558476881237,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.9833333333333332,
+      "recovery_ge_050": 0.4166666666666667,
+      "n_pairs": 60
+    },
+    {
+      "rank": 2,
+      "condition": "L10H4 + L9H2",
+      "n_heads": 2,
+      "mean_recovery": 0.3388975457940897,
+      "median_recovery": 0.3104616858139517,
+      "std_recovery": 0.1718649243040698,
+      "min_recovery": 0.0846783342661362,
+      "max_recovery": 1.246090208522212,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.7,
+      "recovery_ge_050": 0.1166666666666666,
+      "n_pairs": 60
+    },
+    {
+      "rank": 3,
+      "condition": "L10H4 + L8H9",
+      "n_heads": 2,
+      "mean_recovery": 0.3376421416392836,
+      "median_recovery": 0.3104573340254818,
+      "std_recovery": 0.1110242246497066,
+      "min_recovery": 0.1345359405122555,
+      "max_recovery": 0.8914324569356301,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.85,
+      "recovery_ge_050": 0.05,
+      "n_pairs": 60
+    },
+    {
+      "rank": 4,
+      "condition": "L8H9 + L9H2",
+      "n_heads": 2,
+      "mean_recovery": 0.3221449316130234,
+      "median_recovery": 0.284488813423249,
+      "std_recovery": 0.1767093684904603,
+      "min_recovery": 0.1283393004681906,
+      "max_recovery": 1.5211922030825022,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.7333333333333333,
+      "recovery_ge_050": 0.0333333333333333,
+      "n_pairs": 60
+    },
+    {
+      "rank": 5,
+      "condition": "L10H4",
+      "n_heads": 1,
+      "mean_recovery": 0.1770275339423595,
+      "median_recovery": 0.1696906523017147,
+      "std_recovery": 0.0767282651166565,
+      "min_recovery": 0.0393743665764116,
+      "max_recovery": 0.3539211242067089,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.2,
+      "recovery_ge_050": 0.0,
+      "n_pairs": 60
+    },
+    {
+      "rank": 6,
+      "condition": "L8H9",
+      "n_heads": 1,
+      "mean_recovery": 0.1624279868844315,
+      "median_recovery": 0.1547485839506637,
+      "std_recovery": 0.0693302427758982,
+      "min_recovery": 0.0664028019021042,
+      "max_recovery": 0.5510539437896645,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.0666666666666666,
+      "recovery_ge_050": 0.0166666666666666,
+      "n_pairs": 60
+    },
+    {
+      "rank": 7,
+      "condition": "L9H2",
+      "n_heads": 1,
+      "mean_recovery": 0.1601051088530783,
+      "median_recovery": 0.1272917797419722,
+      "std_recovery": 0.1213493462642312,
+      "min_recovery": 0.0326352409916136,
+      "max_recovery": 0.9231640979147778,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.1333333333333333,
+      "recovery_ge_050": 0.0166666666666666,
+      "n_pairs": 60
+    }
+  ],
+  "activation_recovery_correlation": [],
+  "generalization_evidence": {
+    "phase15_generalization": [
+      {
+        "condition": "single_head",
+        "mean": 0.1731920459769685,
+        "median": 0.1683863084157209,
+        "std": 0.066894751080267,
+        "min": 0.0517638501636562,
+        "max": 0.3228298624632015,
+        "positive_fraction": 1.0,
+        "n": 40
+      },
+      {
+        "condition": "three_head_circuit",
+        "mean": 0.4841127346996684,
+        "median": 0.473154348815792,
+        "std": 0.1088530583746408,
+        "min": 0.2463695155481547,
+        "max": 0.7042893606424703,
+        "positive_fraction": 1.0,
+        "n": 40
+      },
+      {
+        "condition": "circuit_minus_single",
+        "mean": 0.3109206887226999,
+        "median": 0.323944413575957,
+        "std": 0.0724117222227547,
+        "min": 0.1702048535008664,
+        "max": 0.4822043910603525,
+        "positive_fraction": 1.0,
+        "n": 40
+      }
+    ],
+    "phase16_statistics": {
+      "phase": 16,
+      "name": "heldout_statistical_significance",
+      "split": "heldout",
+      "n_pairs": 40,
+      "frozen_single_head": "L10H4",
+      "frozen_circuit": [
+        "L10H4",
+        "L8H9",
+        "L9H2"
+      ],
+      "source": "Phase 15 heldout_generalization_results.csv",
+      "statistical_tests": {
+        "bootstrap_iterations": 10000,
+        "permutation_iterations": 10000,
+        "alpha": 0.05,
+        "wilcoxon_alternative": "greater",
+        "permutation_type": "paired_sign_flip"
+      },
+      "primary": {
+        "n_pairs": 40,
+        "mean_single_recovery": 0.1731920459769685,
+        "mean_circuit_recovery": 0.4841127346996684,
+        "mean_improvement": 0.3109206887226999,
+        "median_improvement": 0.32394441357595716,
+        "sd_improvement": 0.0724117222227548,
+        "positive_improvement_fraction": 1.0,
+        "circuit_positive_fraction": 1.0,
+        "paired_cohens_d": 4.293789447048886,
+        "wilcoxon_statistic": 820.0,
+        "wilcoxon_p_value": 9.094947017729282e-13,
+        "alpha": 0.05
+      },
+      "bootstrap": {
+        "iterations": 10000,
+        "mean": 0.3109371615013259,
+        "ci_low": 0.2884830886228696,
+        "ci_high": 0.33283224314614207,
+        "probability_positive": 1.0
+      },
+      "permutation": {
+        "iterations": 10000,
+        "observed_mean": 0.3109206887226999,
+        "p_value": 9.999000099990002e-05
+      },
+      "leave_one_out": {
+        "minimum_mean": 0.30652879891917034,
+        "maximum_mean": 0.31452878706172127,
+        "minimum_positive_fraction": 1.0
+      },
+      "checks": {
+        "mean_improvement_positive": true,
+        "bootstrap_ci_excludes_zero": true,
+        "bootstrap_probability_positive": true,
+        "permutation_significant": true,
+        "wilcoxon_significant": true,
+        "circuit_better_on_majority": true,
+        "leave_one_out_positive": true
+      },
+      "decision": "HELDOUT_STATISTICAL_SUPPORT",
+      "data_leakage": {
+        "discovery_results_used": false,
+        "head_selection": false,
+        "circuit_selection": false,
+        "heldout_optimization": false
+      },
+      "model_weights_modified": false
+    }
+  }
+}

@@ -1,0 +1,2 @@
+n_pairs,mean_single_recovery,mean_circuit_recovery,mean_improvement,median_improvement,sd_improvement,positive_improvement_fraction,circuit_positive_fraction,paired_cohens_d,wilcoxon_statistic,wilcoxon_p_value,alpha
+40,0.1731920459769685,0.4841127346996684,0.3109206887226999,0.32394441357595716,0.0724117222227548,1.0,1.0,4.293789447048886,820.0,9.094947017729282e-13,0.05

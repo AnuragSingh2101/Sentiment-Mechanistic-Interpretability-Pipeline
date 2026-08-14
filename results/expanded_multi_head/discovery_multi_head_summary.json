@@ -1,0 +1,154 @@
+{
+  "phase": 14,
+  "name": "discovery_multi_head_activation_patching",
+  "model": "gpt2",
+  "dataset": {
+    "split": "discovery",
+    "pairs": 60,
+    "heldout_pairs_loaded": false
+  },
+  "candidate_selection": {
+    "source": "Phase 13 discovery_head_ranking.csv",
+    "top_k": 3,
+    "candidate_heads": [
+      "L10H4",
+      "L8H9",
+      "L9H2"
+    ]
+  },
+  "combinations": [
+    "L10H4",
+    "L8H9",
+    "L9H2",
+    "L10H4 + L8H9",
+    "L10H4 + L9H2",
+    "L8H9 + L9H2",
+    "L10H4 + L8H9 + L9H2"
+  ],
+  "metric": {
+    "name": "logit_difference",
+    "definition": "logit(' positive') - logit(' negative')",
+    "recovery": "(patched - corrupted) / (clean - corrupted)"
+  },
+  "patching": {
+    "hook": "blocks.{layer}.attn.hook_z",
+    "position": "final_prediction_position",
+    "variable_sequence_lengths": true,
+    "alignment": "final_position_only"
+  },
+  "results": {
+    "conditions": [
+      {
+        "rank": 1,
+        "condition": "L10H4 + L8H9 + L9H2",
+        "n_heads": 3,
+        "mean_recovery": 0.49832513841828624,
+        "median_recovery": 0.447932999038574,
+        "std_recovery": 0.2160160163958896,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.9833333333333333,
+        "recovery_ge_050": 0.4166666666666667,
+        "n_pairs": 60
+      },
+      {
+        "rank": 2,
+        "condition": "L10H4 + L9H2",
+        "n_heads": 2,
+        "mean_recovery": 0.33889754579408976,
+        "median_recovery": 0.3104616858139517,
+        "std_recovery": 0.17186492430406988,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.7,
+        "recovery_ge_050": 0.11666666666666667,
+        "n_pairs": 60
+      },
+      {
+        "rank": 3,
+        "condition": "L10H4 + L8H9",
+        "n_heads": 2,
+        "mean_recovery": 0.3376421416392836,
+        "median_recovery": 0.3104573340254818,
+        "std_recovery": 0.11102422464970664,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.85,
+        "recovery_ge_050": 0.05,
+        "n_pairs": 60
+      },
+      {
+        "rank": 4,
+        "condition": "L8H9 + L9H2",
+        "n_heads": 2,
+        "mean_recovery": 0.32214493161302343,
+        "median_recovery": 0.28448881342324905,
+        "std_recovery": 0.17670936849046034,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.7333333333333333,
+        "recovery_ge_050": 0.03333333333333333,
+        "n_pairs": 60
+      },
+      {
+        "rank": 5,
+        "condition": "L10H4",
+        "n_heads": 1,
+        "mean_recovery": 0.1770275339423595,
+        "median_recovery": 0.16969065230171473,
+        "std_recovery": 0.07672826511665659,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.2,
+        "recovery_ge_050": 0.0,
+        "n_pairs": 60
+      },
+      {
+        "rank": 6,
+        "condition": "L8H9",
+        "n_heads": 1,
+        "mean_recovery": 0.16242798688443155,
+        "median_recovery": 0.15474858395066374,
+        "std_recovery": 0.06933024277589829,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.06666666666666667,
+        "recovery_ge_050": 0.016666666666666666,
+        "n_pairs": 60
+      },
+      {
+        "rank": 7,
+        "condition": "L9H2",
+        "n_heads": 1,
+        "mean_recovery": 0.16010510885307838,
+        "median_recovery": 0.12729177974197228,
+        "std_recovery": 0.12134934626423127,
+        "positive_fraction": 1.0,
+        "recovery_ge_025": 0.13333333333333333,
+        "recovery_ge_050": 0.016666666666666666,
+        "n_pairs": 60
+      }
+    ],
+    "best_condition": {
+      "rank": 1,
+      "condition": "L10H4 + L8H9 + L9H2",
+      "n_heads": 3,
+      "mean_recovery": 0.49832513841828624,
+      "median_recovery": 0.447932999038574,
+      "std_recovery": 0.2160160163958896,
+      "positive_fraction": 1.0,
+      "recovery_ge_025": 0.9833333333333333,
+      "recovery_ge_050": 0.4166666666666667,
+      "n_pairs": 60
+    },
+    "comparison_to_best_single": {
+      "best_single_head": "L10H4",
+      "best_single_recovery": 0.1770275339423595,
+      "best_multi_head_condition": "L10H4 + L8H9 + L9H2",
+      "best_multi_recovery": 0.49832513841828624,
+      "multi_minus_single": 0.3212976044759267,
+      "multi_head_better": true
+    }
+  },
+  "data_leakage": {
+    "heldout_loaded": false,
+    "heldout_used_for_selection": false,
+    "heldout_used_for_ranking": false,
+    "heldout_used_for_evaluation": false
+  },
+  "model_weights_modified": false
+}

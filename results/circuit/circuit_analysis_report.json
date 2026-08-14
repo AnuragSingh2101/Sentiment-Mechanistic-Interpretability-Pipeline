@@ -1,0 +1,68 @@
+{
+  "phase": 8,
+  "experiment": "circuit_mechanism_analysis",
+  "model": "gpt2",
+  "device": "cuda",
+  "dataset_pairs": 20,
+  "candidate_heads": [
+    "L8H9",
+    "L9H2",
+    "L10H4"
+  ],
+  "method": "TransformerLens run_with_cache on blocks.X.attn.hook_z",
+  "phase6_results_available": true,
+  "phase7_results_available": true,
+  "head_activation_summary": [
+    {
+      "layer": 10,
+      "head": 4,
+      "head_label": "L10H4",
+      "mean_difference_norm": 0.30206140130758286,
+      "median_difference_norm": 0.2602590471506119,
+      "mean_max_difference_norm": 1.4743594974279404,
+      "mean_absolute_difference": 0.029890124313533308,
+      "mean_signed_difference": 0.0008663563698064536
+    },
+    {
+      "layer": 8,
+      "head": 9,
+      "head_label": "L8H9",
+      "mean_difference_norm": 0.2169008068740368,
+      "median_difference_norm": 0.20289268344640732,
+      "mean_max_difference_norm": 0.8573905855417252,
+      "mean_absolute_difference": 0.021903559379279614,
+      "mean_signed_difference": 0.0005781638770713471
+    },
+    {
+      "layer": 9,
+      "head": 2,
+      "head_label": "L9H2",
+      "mean_difference_norm": 0.1880344893783331,
+      "median_difference_norm": 0.1807342767715454,
+      "mean_max_difference_norm": 0.8968718215823174,
+      "mean_absolute_difference": 0.01926839374937117,
+      "mean_signed_difference": -4.392141418065876e-05
+    }
+  ],
+  "layer_summary": [
+    {
+      "layer": 8,
+      "mean_difference_norm": 0.2169008068740368,
+      "mean_absolute_difference": 0.021903559379279614,
+      "max_difference_norm": 1.4448896646499634
+    },
+    {
+      "layer": 9,
+      "mean_difference_norm": 0.1880344893783331,
+      "mean_absolute_difference": 0.01926839374937117,
+      "max_difference_norm": 1.7554409503936768
+    },
+    {
+      "layer": 10,
+      "mean_difference_norm": 0.30206140130758286,
+      "mean_absolute_difference": 0.029890124313533308,
+      "max_difference_norm": 2.530845880508423
+    }
+  ],
+  "activation_behavior_correlations": []
+}

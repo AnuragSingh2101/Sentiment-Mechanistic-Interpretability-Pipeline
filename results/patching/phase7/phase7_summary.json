@@ -1,0 +1,83 @@
+{
+  "experiment": "top_head_validation_and_multi_head_patching",
+  "model": "gpt2",
+  "device": "cuda",
+  "n_pairs": 20,
+  "top_heads": [
+    "L10H4",
+    "L9H2",
+    "L8H9"
+  ],
+  "conditions": [
+    {
+      "condition": "L10H4 + L9H2 + L8H9",
+      "num_heads": 3,
+      "mean_recovery": 0.5466720854245802,
+      "median_recovery": 0.5541303760501228,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L10H4 + L9H2",
+      "num_heads": 2,
+      "mean_recovery": 0.40264879196301234,
+      "median_recovery": 0.40638376383763836,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L10H4 + L8H9",
+      "num_heads": 2,
+      "mean_recovery": 0.3665767181163559,
+      "median_recovery": 0.3682590855803048,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L9H2 + L8H9",
+      "num_heads": 2,
+      "mean_recovery": 0.3120248606204646,
+      "median_recovery": 0.3218205954864404,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L10H4",
+      "num_heads": 1,
+      "mean_recovery": 0.2226420201322467,
+      "median_recovery": 0.24300712442265449,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L9H2",
+      "num_heads": 1,
+      "mean_recovery": 0.16741063437750542,
+      "median_recovery": 0.15019912763132942,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    },
+    {
+      "condition": "L8H9",
+      "num_heads": 1,
+      "mean_recovery": 0.1427567378593285,
+      "median_recovery": 0.15994030542011348,
+      "positive_recovery_fraction": 1.0,
+      "full_recovery_fraction": 0.0,
+      "valid_pairs": 20,
+      "total_pairs": 20
+    }
+  ]
+}

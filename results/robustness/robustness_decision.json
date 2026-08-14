@@ -1,0 +1,12 @@
+{
+  "decision": "ROBUST_SUPPORT",
+  "criteria": {
+    "mean_improvement_positive": true,
+    "bootstrap_ci_excludes_zero": true,
+    "positive_on_majority_pairs": true,
+    "permutation_significant": true,
+    "wilcoxon_significant": true,
+    "leave_one_out_mean_positive": true
+  },
+  "minimum_leave_one_out_mean": 0.3194396157880396
+}

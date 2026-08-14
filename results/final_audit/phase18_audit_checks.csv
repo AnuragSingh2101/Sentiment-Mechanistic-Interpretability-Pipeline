@@ -1,0 +1,32 @@
+name,status,detail
+Phase 10 decision,PASS,results\robustness\robustness_decision.json
+Phase 14 results,PASS,results\expanded_multi_head\discovery_multi_head_results.csv
+Phase 14 summary,PASS,results\expanded_multi_head\discovery_multi_head_summary.csv
+Phase 14 JSON,PASS,results\expanded_multi_head\discovery_multi_head_summary.json
+Phase 15 results,PASS,results\heldout_generalization\heldout_generalization_results.csv
+Phase 15 JSON,PASS,results\heldout_generalization\heldout_generalization_summary.json
+Phase 16 primary,PASS,results\heldout_statistics\heldout_primary_statistics.csv
+Phase 16 bootstrap,PASS,results\heldout_statistics\heldout_bootstrap_statistics.csv
+Phase 16 permutation,PASS,results\heldout_statistics\heldout_permutation_statistics.csv
+Phase 16 JSON,PASS,results\heldout_statistics\phase16_statistical_summary.json
+Phase 17 activation,PASS,results\mechanistic\candidate_head_activation_summary.csv
+Phase 17 token positions,PASS,results\mechanistic\token_position_activation.csv
+Phase 17 layer progression,PASS,results\mechanistic\layer_progression.csv
+Phase 17 interpretation,PASS,results\mechanistic\mechanistic_interpretation.md
+Phase 17 summary,PASS,results\mechanistic\mechanistic_summary.json
+Phase 17 correlation,PASS,results\mechanistic\activation_recovery_correlation.csv
+Phase 14 candidate heads,PASS,"['L10H4', 'L8H9', 'L9H2']"
+Phase 14 frozen circuit,PASS,L10H4 + L8H9 + L9H2
+Phase 14 discovery count,PASS,60
+Held-out pair count,PASS,40
+Circuit beats single on held-out pairs,PASS,40/40
+Phase 16 decision,PASS,HELDOUT_STATISTICAL_SUPPORT
+Candidate activation schema,PASS,3 rows
+Frozen heads present,PASS,"['L10H4', 'L8H9', 'L9H2']"
+Interpretation section: Activation-difference evidence,PASS,
+Interpretation section: Causal evidence,PASS,
+Interpretation section: Held-out evidence,PASS,
+Interpretation section: Limitations,PASS,
+Interpretation section: Conclusion,PASS,
+Phase 13 normalized_recovery,WARN,Missing; correlation cannot be computed from this artifact.
+Discovery/held-out IDs disjoint,PASS,60 / 40

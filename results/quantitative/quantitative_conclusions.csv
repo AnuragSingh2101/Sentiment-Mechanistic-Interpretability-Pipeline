@@ -1,0 +1,5 @@
+finding,value,metric,interpretation
+best_single_head,L10H4,0.22264202013224668,This candidate head had the largest mean causal recovery among the three Phase 8 candidate heads.
+best_multi_head_condition,L10H4 + L9H2 + L8H9,0.5466720854245801,This condition had the largest mean recovery among the tested Phase 7 conditions.
+largest_activation_difference,L10H4,0.6081767678260803,This head showed the largest clean-vs-corrupted activation difference among the candidate heads.
+multi_head_vs_single_head,L10H4 + L9H2 + L8H9,0.32403006529233347,Difference between the best tested multi-head condition and the best candidate single head.

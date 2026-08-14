@@ -1,0 +1,356 @@
+{
+  "model": "gpt2",
+  "device": "cuda",
+  "n_layers": 12,
+  "n_heads": 12,
+  "d_head": 64,
+  "d_model": 768,
+  "positive_token": " positive",
+  "positive_token_id": 3967,
+  "negative_token": " negative",
+  "negative_token_id": 4633,
+  "cache_hook": "blocks.{layer}.attn.hook_z",
+  "cache_final_position_only": true,
+  "pairs": [
+    {
+      "pair_id": 1,
+      "clean_text": "The movie was excellent.",
+      "corrupted_text": "The movie was terrible.",
+      "clean_path": "data\\activations\\pair_01_clean.pt",
+      "corrupted_path": "data\\activations\\pair_01_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 2,
+      "clean_text": "The film was wonderful.",
+      "corrupted_text": "The film was awful.",
+      "clean_path": "data\\activations\\pair_02_clean.pt",
+      "corrupted_path": "data\\activations\\pair_02_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 3,
+      "clean_text": "The acting was amazing.",
+      "corrupted_text": "The acting was horrible.",
+      "clean_path": "data\\activations\\pair_03_clean.pt",
+      "corrupted_path": "data\\activations\\pair_03_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 4,
+      "clean_text": "The story was brilliant.",
+      "corrupted_text": "The story was dreadful.",
+      "clean_path": "data\\activations\\pair_04_clean.pt",
+      "corrupted_path": "data\\activations\\pair_04_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 5,
+      "clean_text": "The ending was satisfying.",
+      "corrupted_text": "The ending was disappointing.",
+      "clean_path": "data\\activations\\pair_05_clean.pt",
+      "corrupted_path": "data\\activations\\pair_05_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 6,
+      "clean_text": "The performance was outstanding.",
+      "corrupted_text": "The performance was terrible.",
+      "clean_path": "data\\activations\\pair_06_clean.pt",
+      "corrupted_path": "data\\activations\\pair_06_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 7,
+      "clean_text": "The director was talented.",
+      "corrupted_text": "The director was incompetent.",
+      "clean_path": "data\\activations\\pair_07_clean.pt",
+      "corrupted_path": "data\\activations\\pair_07_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 8,
+      "clean_text": "The soundtrack was beautiful.",
+      "corrupted_text": "The soundtrack was unpleasant.",
+      "clean_path": "data\\activations\\pair_08_clean.pt",
+      "corrupted_path": "data\\activations\\pair_08_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 9,
+      "clean_text": "The characters were engaging.",
+      "corrupted_text": "The characters were boring.",
+      "clean_path": "data\\activations\\pair_09_clean.pt",
+      "corrupted_path": "data\\activations\\pair_09_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 10,
+      "clean_text": "The dialogue was clever.",
+      "corrupted_text": "The dialogue was stupid.",
+      "clean_path": "data\\activations\\pair_10_clean.pt",
+      "corrupted_path": "data\\activations\\pair_10_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 11,
+      "clean_text": "The screenplay was impressive.",
+      "corrupted_text": "The screenplay was disappointing.",
+      "clean_path": "data\\activations\\pair_11_clean.pt",
+      "corrupted_path": "data\\activations\\pair_11_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 12,
+      "clean_text": "The cinematography was stunning.",
+      "corrupted_text": "The cinematography was ugly.",
+      "clean_path": "data\\activations\\pair_12_clean.pt",
+      "corrupted_path": "data\\activations\\pair_12_corrupted.pt",
+      "clean_sequence_length": 13,
+      "corrupted_sequence_length": 13,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 13,
+      "clean_text": "The pacing was perfect.",
+      "corrupted_text": "The pacing was awful.",
+      "clean_path": "data\\activations\\pair_13_clean.pt",
+      "corrupted_path": "data\\activations\\pair_13_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 14,
+      "clean_text": "The acting was convincing.",
+      "corrupted_text": "The acting was unconvincing.",
+      "clean_path": "data\\activations\\pair_14_clean.pt",
+      "corrupted_path": "data\\activations\\pair_14_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 15,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 15,
+      "clean_text": "The plot was fascinating.",
+      "corrupted_text": "The plot was tedious.",
+      "clean_path": "data\\activations\\pair_15_clean.pt",
+      "corrupted_path": "data\\activations\\pair_15_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 16,
+      "clean_text": "The film was enjoyable.",
+      "corrupted_text": "The film was unpleasant.",
+      "clean_path": "data\\activations\\pair_16_clean.pt",
+      "corrupted_path": "data\\activations\\pair_16_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 17,
+      "clean_text": "The experience was memorable.",
+      "corrupted_text": "The experience was forgettable.",
+      "clean_path": "data\\activations\\pair_17_clean.pt",
+      "corrupted_path": "data\\activations\\pair_17_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 13,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 18,
+      "clean_text": "The movie was entertaining.",
+      "corrupted_text": "The movie was boring.",
+      "clean_path": "data\\activations\\pair_18_clean.pt",
+      "corrupted_path": "data\\activations\\pair_18_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 19,
+      "clean_text": "The production was polished.",
+      "corrupted_text": "The production was sloppy.",
+      "clean_path": "data\\activations\\pair_19_clean.pt",
+      "corrupted_path": "data\\activations\\pair_19_corrupted.pt",
+      "clean_sequence_length": 12,
+      "corrupted_sequence_length": 12,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    },
+    {
+      "pair_id": 20,
+      "clean_text": "The final scene was fantastic.",
+      "corrupted_text": "The final scene was horrible.",
+      "clean_path": "data\\activations\\pair_20_clean.pt",
+      "corrupted_path": "data\\activations\\pair_20_corrupted.pt",
+      "clean_sequence_length": 13,
+      "corrupted_sequence_length": 13,
+      "activation_shape": [
+        12,
+        64
+      ],
+      "layers": 12,
+      "heads": 12,
+      "head_dimension": 64,
+      "cache_final_position_only": true
+    }
+  ]
+}

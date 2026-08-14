@@ -1,0 +1,51 @@
+{
+  "phase": 10,
+  "name": "robustness_and_statistical_significance",
+  "random_seed": 42,
+  "bootstrap_iterations": 10000,
+  "permutation_iterations": 10000,
+  "candidate_heads": [
+    "L8H9",
+    "L9H2",
+    "L10H4"
+  ],
+  "best_single_head": "L10H4",
+  "best_multi_condition": "L10H4 + L9H2 + L8H9",
+  "expected_pairs": 20,
+  "observed_pairs": 20,
+  "primary_statistics": {
+    "n_pairs": 20,
+    "mean_single_recovery": 0.22264202013224668,
+    "mean_multi_recovery": 0.5466720854245801,
+    "mean_improvement": 0.3240300652923335,
+    "median_improvement": 0.3301159827298684,
+    "std_improvement": 0.07104032049074904,
+    "bootstrap_ci95_low": 0.29213854975344594,
+    "bootstrap_ci95_high": 0.35377054808787,
+    "positive_improvement_fraction": 1.0,
+    "nonnegative_improvement_fraction": 1.0,
+    "paired_cohens_d": 4.561213449684945,
+    "wilcoxon_statistic": 0.0,
+    "wilcoxon_p_value": 1.9073486328125e-06,
+    "permutation_p_value": 9.999000099990002e-05
+  },
+  "bootstrap_statistics": {
+    "bootstrap_iterations": 10000,
+    "bootstrap_mean": 0.3243703738486627,
+    "ci95_low": 0.29213854975344594,
+    "ci95_high": 0.35377054808787,
+    "probability_improvement_positive": 1.0
+  },
+  "robustness_decision": {
+    "decision": "ROBUST_SUPPORT",
+    "criteria": {
+      "mean_improvement_positive": true,
+      "bootstrap_ci_excludes_zero": true,
+      "positive_on_majority_pairs": true,
+      "permutation_significant": true,
+      "wilcoxon_significant": true,
+      "leave_one_out_mean_positive": true
+    },
+    "minimum_leave_one_out_mean": 0.3194396157880396
+  }
+}

@@ -1,0 +1,41 @@
+pair_id,domain,clean_text,corrupted_text,clean_label,corrupted_label,split,pair_hash
+1,movie,The movie was excellent.,The movie was terrible.,positive,negative,heldout,535cca1a45bf3ba0f0506685b75fc958f20ece8b2024edd564f7602f8924a2a9
+8,movie,The soundtrack was beautiful.,The soundtrack was unpleasant.,positive,negative,heldout,50c52593dab8f56632b8d2545fd5e1799784ca60d3b4d9deda97a49a63c9e8d3
+12,movie,The cinematography was stunning.,The cinematography was ugly.,positive,negative,heldout,1dc8c762838dfdb385f756670757ee38cafe725e1c9a02e6d8f4b361c8e6b539
+15,movie,The plot was fascinating.,The plot was tedious.,positive,negative,heldout,5cc0a1d8330d01433d0fa024c32fcd7558d814bb0e8586e9b1b311baa8f90e57
+16,movie,The film was enjoyable.,The film was unpleasant.,positive,negative,heldout,dfa3c513d3ddbad6e5c668abe7e35ba74feff744422ef07c09ad8a3dcd1e3f64
+17,movie,The experience was memorable.,The experience was forgettable.,positive,negative,heldout,e87bef4a6a0bf1aa6026e396bf4e649be8bf43312b4c622946373ab4b2ca0ccd
+18,movie,The movie was entertaining.,The movie was boring.,positive,negative,heldout,34b90d43f9c3cf572eea557702f959fd47926816cb364eac00a51b9d84d7d178
+19,movie,The production was polished.,The production was sloppy.,positive,negative,heldout,7e5496b9f1bd37ac749c951f18c8db22bea64cd394e22c816d6b6917b04aeb8d
+20,movie,The final scene was fantastic.,The final scene was horrible.,positive,negative,heldout,5732c49aa76a596df0fbb419b3df0f4af1a92accb3160b1136e19d03bfab87dc
+22,movie,The film delivered a compelling story.,The film delivered a tedious story.,positive,negative,heldout,bfe40fd621da03144aad09c8df18058b22f9aee1a7704023e11ca99d2615fa40
+26,restaurant,The restaurant was excellent.,The restaurant was terrible.,positive,negative,heldout,b9856665a44da8e0e568b0047b63bdb906b9e08ddb62e5a39caf5946d5c8ae95
+27,restaurant,The food was delicious.,The food was disgusting.,positive,negative,heldout,da3611ec91616ae0acad8c5e495fd99e75fe4f8530f832dce08ffdede8e6749f
+32,restaurant,The atmosphere was pleasant.,The atmosphere was unpleasant.,positive,negative,heldout,706d5e3b296b1585812c3457272945d2bd3ca345a222d3ada2f703cd2b8b6a28
+33,restaurant,The dessert was fantastic.,The dessert was horrible.,positive,negative,heldout,ce560da4f0272bdfe89f5bb8fbb614a01e9261013fbc8362e9ee508e10af78ec
+34,restaurant,The presentation was beautiful.,The presentation was unattractive.,positive,negative,heldout,d89daaa1eba8c00e509c4a03af3b2a21b2ed5412430598e8963f935da520ee2d
+37,restaurant,The dining experience was memorable.,The dining experience was forgettable.,positive,negative,heldout,3f486291cba09b2f002dbbe34c31c5432f19f340e9b44d0e85705300b0834baf
+41,software,The software was reliable.,The software was unreliable.,positive,negative,heldout,9f3c4509bf40725911ef04eb6cd8354822f69783db1f7ba8fafc7e28a55bea1e
+42,software,The application was intuitive.,The application was confusing.,positive,negative,heldout,99cc6ac36b5ca3b5b5262555cf58385010153900a6779d220d7d0785860313f4
+50,software,The feature worked perfectly.,The feature worked poorly.,positive,negative,heldout,a651ed52bf9b347f6cd3a84747152d2a1da17fd1e9cea4ac84e627a54a093ff5
+52,software,The new version performed impressively.,The new version performed poorly.,positive,negative,heldout,7bd02cb5c7cf88e6daf585066d48832f647af98ec151ba48c7203cfcba110cce
+54,software,The developer experience was excellent.,The developer experience was frustrating.,positive,negative,heldout,766fb9bbf2fd3921d72d1ee73e99083b74bc9778a09aaa4a42ae589f95093d48
+55,software,The product solved the problem effectively.,The product failed to solve the problem effectively.,positive,negative,heldout,b3634f3b57efa1db5a0954716eb7d442724bc2b6f5a1bb9c89810febab6cc917
+58,product,The headphones sounded fantastic.,The headphones sounded horrible.,positive,negative,heldout,6297d4f264f43fb0279d64b2b28c9ed726e34076fe5334625f7a1b35eb275c79
+61,product,The phone had an impressive camera.,The phone had a disappointing camera.,positive,negative,heldout,5ca03ff5d5e2113d56ccfab09146d19888a6099adaa953ef5618a4fc563d4354
+63,product,The build quality was excellent.,The build quality was poor.,positive,negative,heldout,be1beb428bb6fa0579a3e0d46c6fbfa6c1629755e26b00b3c259553165fcf733
+64,product,The customer support was helpful.,The customer support was unhelpful.,positive,negative,heldout,ea1224f67f3cc8af52ab7db42059563b4aab5cf797f85816ce1f3aeacc090c44
+66,product,The service was convenient.,The service was inconvenient.,positive,negative,heldout,9c809f5f5b6d192ce95d09fae579f432343d327b33145968c9824d61e604e14e
+70,product,The overall experience was excellent.,The overall experience was frustrating.,positive,negative,heldout,342ff28089c8e1f2508aeb2abd17922f961e95ddf580c04252ff06fa5a1a31dd
+73,book,The author developed the characters brilliantly.,The author developed the characters poorly.,positive,negative,heldout,8da1ee3b91521141d13ccb6997f60a1a3bb73dea4f3417e4c36eeb0445dd501a
+74,book,The central argument was compelling.,The central argument was unconvincing.,positive,negative,heldout,ad37d76eeb6be40f5ac5de14936de931d89b7a1b1dca9cc031d7d054cafaf290
+78,book,The story was memorable.,The story was forgettable.,positive,negative,heldout,acdf177b2dec387a11914d29a3fe216d8489037b79b994ca180c641ee037b5a7
+79,book,The chapter was informative.,The chapter was uninformative.,positive,negative,heldout,38aaba912e78acf635e95071ceb43762d7182f54d0ade918485d78c1ebe3b40b
+85,general,The solution was effective.,The solution was ineffective.,positive,negative,heldout,520241ed9e1cee4f183af3b28de90999be1755469d82c643ab6da812532ea4b8
+86,general,The explanation was clear.,The explanation was confusing.,positive,negative,heldout,737002137bd22ad40225ecadcd7fbabff3a109f1cf9ce90b5ce7e58963e765bf
+87,general,The plan was practical.,The plan was impractical.,positive,negative,heldout,2427fd45af59f57bae0b66233f07d1c6341de17527c02bf3b29652cd713b4ffe
+88,general,The experience was rewarding.,The experience was frustrating.,positive,negative,heldout,4c7d39d9b56dba1484e4bef4c324fd1448a877b100f2e5a332b3da5a02253653
+91,general,The workshop was engaging.,The workshop was boring.,positive,negative,heldout,f330333d79c93788d7a71e537bcce0bf7b7313ab69f3f061ccf9419d345f8613
+92,general,The result was encouraging.,The result was discouraging.,positive,negative,heldout,4faff19232dea6d9cb1b951e655e710a82ab5f1740ae14c8bb62a7bbd4822db2
+96,general,I found the experience genuinely rewarding.,I found the experience genuinely disappointing.,positive,negative,heldout,bb8679e8ea305eab83ad6f0a17d6c47cd49e30876b9edec11fa036802c2fc8f7
+98,general,The explanation made the topic much clearer.,The explanation made the topic much more confusing.,positive,negative,heldout,210fbdb15e8d6a99028514239b9ad95fb7f41d00d40cb2285336b9d151cba752

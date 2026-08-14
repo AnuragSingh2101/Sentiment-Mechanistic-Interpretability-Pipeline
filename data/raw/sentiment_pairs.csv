@@ -1,0 +1,21 @@
+pair_id,clean_text,corrupted_text,clean_label,corrupted_label
+1,The movie was excellent.,The movie was terrible.,positive,negative
+2,The film was wonderful.,The film was awful.,positive,negative
+3,The acting was amazing.,The acting was horrible.,positive,negative
+4,The story was brilliant.,The story was dreadful.,positive,negative
+5,The ending was satisfying.,The ending was disappointing.,positive,negative
+6,The performance was outstanding.,The performance was terrible.,positive,negative
+7,The director was talented.,The director was incompetent.,positive,negative
+8,The soundtrack was beautiful.,The soundtrack was unpleasant.,positive,negative
+9,The characters were engaging.,The characters were boring.,positive,negative
+10,The dialogue was clever.,The dialogue was stupid.,positive,negative
+11,The screenplay was impressive.,The screenplay was disappointing.,positive,negative
+12,The cinematography was stunning.,The cinematography was ugly.,positive,negative
+13,The pacing was perfect.,The pacing was awful.,positive,negative
+14,The acting was convincing.,The acting was unconvincing.,positive,negative
+15,The plot was fascinating.,The plot was tedious.,positive,negative
+16,The film was enjoyable.,The film was unpleasant.,positive,negative
+17,The experience was memorable.,The experience was forgettable.,positive,negative
+18,The movie was entertaining.,The movie was boring.,positive,negative
+19,The production was polished.,The production was sloppy.,positive,negative
+20,The final scene was fantastic.,The final scene was horrible.,positive,negative

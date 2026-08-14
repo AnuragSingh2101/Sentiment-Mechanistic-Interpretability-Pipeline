@@ -1,0 +1,2 @@
+bootstrap_iterations,bootstrap_mean,ci95_low,ci95_high,probability_improvement_positive
+10000,0.3243703738486627,0.29213854975344594,0.35377054808787,1.0

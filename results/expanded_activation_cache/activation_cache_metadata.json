@@ -1,0 +1,42 @@
+{
+  "phase": 12,
+  "name": "expanded_activation_caching",
+  "model": "gpt2",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "dataset": {
+    "total_pairs": 100,
+    "discovery_pairs": 60,
+    "heldout_pairs": 40,
+    "discovery_activation_files": 120,
+    "heldout_activation_files": 80,
+    "total_activation_files": 200
+  },
+  "architecture": {
+    "layers": 12,
+    "heads_per_layer": 12,
+    "head_dimension": 64,
+    "activation_hook": "blocks.{layer}.attn.hook_z",
+    "activation_shape": "[sequence_length, heads, d_head]"
+  },
+  "sequence_lengths": {
+    "clean_min": 12,
+    "clean_max": 16,
+    "corrupted_min": 12,
+    "corrupted_max": 16,
+    "pairs_with_different_lengths": 16
+  },
+  "outputs": {
+    "activation_directory": "data\\expanded_activations",
+    "discovery_directory": "data\\expanded_activations\\discovery",
+    "heldout_directory": "data\\expanded_activations\\heldout",
+    "manifest": "results\\expanded_activation_cache\\activation_cache_manifest.csv"
+  },
+  "data_leakage_protection": {
+    "discovery_and_heldout_separated": true,
+    "heldout_used_for_head_selection": false,
+    "heldout_used_for_activation_patching": false
+  },
+  "model_weights_modified": false,
+  "activation_patching_performed": false
+}

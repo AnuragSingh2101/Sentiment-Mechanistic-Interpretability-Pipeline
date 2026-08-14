@@ -1,0 +1,68 @@
+{
+  "phase": 16,
+  "name": "heldout_statistical_significance",
+  "split": "heldout",
+  "n_pairs": 40,
+  "frozen_single_head": "L10H4",
+  "frozen_circuit": [
+    "L10H4",
+    "L8H9",
+    "L9H2"
+  ],
+  "source": "Phase 15 heldout_generalization_results.csv",
+  "statistical_tests": {
+    "bootstrap_iterations": 10000,
+    "permutation_iterations": 10000,
+    "alpha": 0.05,
+    "wilcoxon_alternative": "greater",
+    "permutation_type": "paired_sign_flip"
+  },
+  "primary": {
+    "n_pairs": 40,
+    "mean_single_recovery": 0.1731920459769685,
+    "mean_circuit_recovery": 0.4841127346996684,
+    "mean_improvement": 0.3109206887226999,
+    "median_improvement": 0.32394441357595716,
+    "sd_improvement": 0.0724117222227548,
+    "positive_improvement_fraction": 1.0,
+    "circuit_positive_fraction": 1.0,
+    "paired_cohens_d": 4.293789447048886,
+    "wilcoxon_statistic": 820.0,
+    "wilcoxon_p_value": 9.094947017729282e-13,
+    "alpha": 0.05
+  },
+  "bootstrap": {
+    "iterations": 10000,
+    "mean": 0.3109371615013259,
+    "ci_low": 0.2884830886228696,
+    "ci_high": 0.33283224314614207,
+    "probability_positive": 1.0
+  },
+  "permutation": {
+    "iterations": 10000,
+    "observed_mean": 0.3109206887226999,
+    "p_value": 9.999000099990002e-05
+  },
+  "leave_one_out": {
+    "minimum_mean": 0.30652879891917034,
+    "maximum_mean": 0.31452878706172127,
+    "minimum_positive_fraction": 1.0
+  },
+  "checks": {
+    "mean_improvement_positive": true,
+    "bootstrap_ci_excludes_zero": true,
+    "bootstrap_probability_positive": true,
+    "permutation_significant": true,
+    "wilcoxon_significant": true,
+    "circuit_better_on_majority": true,
+    "leave_one_out_positive": true
+  },
+  "decision": "HELDOUT_STATISTICAL_SUPPORT",
+  "data_leakage": {
+    "discovery_results_used": false,
+    "head_selection": false,
+    "circuit_selection": false,
+    "heldout_optimization": false
+  },
+  "model_weights_modified": false
+}

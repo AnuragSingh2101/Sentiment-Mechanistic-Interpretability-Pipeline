@@ -1,0 +1,2 @@
+n_pairs,mean_single_recovery,mean_multi_recovery,mean_improvement,median_improvement,std_improvement,bootstrap_ci95_low,bootstrap_ci95_high,positive_improvement_fraction,nonnegative_improvement_fraction,paired_cohens_d,wilcoxon_statistic,wilcoxon_p_value,permutation_p_value
+20,0.22264202013224668,0.5466720854245801,0.3240300652923335,0.3301159827298684,0.07104032049074904,0.29213854975344594,0.35377054808787,1.0,1.0,4.561213449684945,0.0,1.9073486328125e-06,9.999000099990002e-05

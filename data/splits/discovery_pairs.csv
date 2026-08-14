@@ -1,0 +1,61 @@
+pair_id,domain,clean_text,corrupted_text,clean_label,corrupted_label,split,pair_hash
+2,movie,The film was wonderful.,The film was awful.,positive,negative,discovery,e143bdaf782f0a8e82fdb11e28edd1913196be7769de8f9c369f66e876b8c430
+3,movie,The acting was amazing.,The acting was horrible.,positive,negative,discovery,e202e2d3451986d9d833ced3338137796a250fdcd26b3ffc054a9db71ce74d83
+4,movie,The story was brilliant.,The story was dreadful.,positive,negative,discovery,7f751dd7d9bbbb8273f946a3c6b39f0a1f05356c15c33cbaedc0fed3d414dd79
+5,movie,The ending was satisfying.,The ending was disappointing.,positive,negative,discovery,d7dc39256b5f6280952896db6df04f6fde91b4d84f3a7398b19f91d8e04df164
+6,movie,The performance was outstanding.,The performance was terrible.,positive,negative,discovery,ed0a574f7c381d46f93ea1b0e974a01dad4daf1151dd8b831bd5377dcc773526
+7,movie,The director was talented.,The director was incompetent.,positive,negative,discovery,9bdf6b4467b4e7df904e2d09944f9009d31b3496eaa05665e440c79d46df04cc
+9,movie,The characters were engaging.,The characters were boring.,positive,negative,discovery,4d52f1258b9c4bc6d06a4ae13d86b632074b9893efac161d23ac8a540a13b19b
+10,movie,The dialogue was clever.,The dialogue was stupid.,positive,negative,discovery,624a6f4285b74189ffcf65a9c2a17fae5e6e6e122a8b78cf1731b1c0ec23b79f
+11,movie,The screenplay was impressive.,The screenplay was disappointing.,positive,negative,discovery,8d2d0a30e12e1bf203b142fadb5a5e7ba3b1150beaedeea2d5608c3a33b2f1d8
+13,movie,The pacing was perfect.,The pacing was awful.,positive,negative,discovery,05b5a06a3fb4434c29724b035e131a08b7587ad17181fc973840b2a7a550bf1e
+14,movie,The acting was convincing.,The acting was unconvincing.,positive,negative,discovery,411b96f02749ef985ce38844430f92269da008071e3cde049bffad04cf5ab317
+21,movie,I found the movie genuinely enjoyable.,I found the movie genuinely unpleasant.,positive,negative,discovery,ed5053517591249037240c23c51ab9bef4c7e160b67861602fd2ee7342a7105d
+23,movie,The performances made the film remarkable.,The performances made the film forgettable.,positive,negative,discovery,331a4b9c420b00889fd8cad62c62c89cac8c5d5c75119cdfaa2ecda1b858846d
+24,movie,"After watching it, I felt impressed.","After watching it, I felt disappointed.",positive,negative,discovery,a30ff565a8492ce891a1515c42b4ec7811961e6d7589a4b8c04ba9c2c986cbcc
+25,movie,The movie remained engaging from beginning to end.,The movie remained boring from beginning to end.,positive,negative,discovery,3230b855dccccf0067afbe131267172a9957412b310cbeffe7f2be1f8228d2e6
+28,restaurant,The service was friendly.,The service was rude.,positive,negative,discovery,b56503f8a75622508d14bc6d33114147219b165722719c44e4f7b87b916cfbb1
+29,restaurant,The meal was satisfying.,The meal was disappointing.,positive,negative,discovery,1b9647fb9bb8281b8827da97b458b4273c8737f7fa11ebe464205d102c40373e
+30,restaurant,The menu was impressive.,The menu was disappointing.,positive,negative,discovery,89032f54cb9df0e38b99f5023132bad80ec40b2e3b20f775823547276e1554ae
+31,restaurant,The staff were attentive.,The staff were careless.,positive,negative,discovery,f4d94b149fdb0315c522a0b4f86fc1371e0d46a306c3cbe57ea2479a5a514347
+35,restaurant,The ingredients tasted fresh.,The ingredients tasted stale.,positive,negative,discovery,efb2792d5ec88de27c5c909a4f70a1fe72d76d6a474b1ec6e14c25188a840059
+36,restaurant,I found the meal delightful.,I found the meal disappointing.,positive,negative,discovery,aa5ad2cf2d2fcfb19367ed97e1092869523f65633a15029503651955f56b18ee
+38,restaurant,The restaurant provided excellent service.,The restaurant provided terrible service.,positive,negative,discovery,b0cbcdc2befc480bd1f1074e2b36cba960013e90ad93ce9f88eac4751fc9e8a8
+39,restaurant,The meal was carefully prepared.,The meal was poorly prepared.,positive,negative,discovery,783c46a351bbbfabbe1d10fe34c28dbcd0fb024cf9369242b4708a5d02ffc12e
+40,restaurant,"Overall, the restaurant exceeded my expectations.","Overall, the restaurant failed my expectations.",positive,negative,discovery,878713aba7017fa68b47aa95894dc3995c1bbe9958486da32be149d392b941b8
+43,software,The interface was elegant.,The interface was clumsy.,positive,negative,discovery,5e9a125e9eeb51d64571dd65c62e43e8d8ee12d14ad81e8a7bcd3b248e3c5a4c
+44,software,The system was efficient.,The system was inefficient.,positive,negative,discovery,1b68c0fce99cdced6c2cc7f32539187802c8c729963390381a5ecffb4fca15d8
+45,software,The update was helpful.,The update was harmful.,positive,negative,discovery,ac17b3f5e229a8d11386fbf5d69d77f2fec14250a1202ece15dae6ba417d9d5a
+46,software,The documentation was clear.,The documentation was confusing.,positive,negative,discovery,4da6ef4c624282ad23173cec7c49acb37faa2ad29efe79f83723fedca4a797f3
+47,software,The tool was powerful.,The tool was useless.,positive,negative,discovery,547a7375fd12cd8200e9628ccfe6418a56a478bb35708ef7dacddc3779324e89
+48,software,The platform was responsive.,The platform was sluggish.,positive,negative,discovery,eabe41232b773cd7a907bd82bfcc4c6de65a38e7f5ec5a0b597ad39f16772ab5
+49,software,The implementation was robust.,The implementation was fragile.,positive,negative,discovery,817e9bf4fcac30368aaad7bc479a899bfeba70bbdcedad09868b1a67d15d84f4
+51,software,The program was easy to use.,The program was difficult to use.,positive,negative,discovery,11f3b274b26261400b48f7823051da759c7b74c017e08c4d85b974e9e9f2a879
+53,software,The system handled the workload smoothly.,The system handled the workload badly.,positive,negative,discovery,63960833ecc87aea48c3d5ce7a8a12c85d8a1f212161fd89176e5d73b216f64f
+56,product,The product was excellent.,The product was terrible.,positive,negative,discovery,51fec04753c18e87d50f95673fa4c9760738731257ac40ccc78b4e995a96713a
+57,product,The device was reliable.,The device was unreliable.,positive,negative,discovery,798437f65a1fa023361d5ae48d7996179488a61c34fec82958739b3fc2356c8d
+59,product,The keyboard felt comfortable.,The keyboard felt uncomfortable.,positive,negative,discovery,f43da7d2c2c293abef2ece6c68bececa7d9c3d9d5ae8d59a6abd127de516fa7c
+60,product,The laptop performed smoothly.,The laptop performed poorly.,positive,negative,discovery,b362fa0152f8790866c57c9dcc4386bf64281961326a116a5564389a8d45a9e7
+62,product,The packaging was attractive.,The packaging was unattractive.,positive,negative,discovery,a5c3292123f13f5b34e71bae5fac826cd28a0fe8c189f2a39f3dc24ecd1034f7
+65,product,The delivery was remarkably fast.,The delivery was painfully slow.,positive,negative,discovery,b5aa7f6e1838348cb58d4d5441c2a52fb878f48625e5c2660e094258fe1ae8d8
+67,product,The purchase was worthwhile.,The purchase was wasteful.,positive,negative,discovery,963d134af0efba00f1d3192df44cd4e00bda9e4d291953ac0b9eb33d456553b6
+68,product,The product exceeded my expectations.,The product disappointed my expectations.,positive,negative,discovery,c938bc520caae6c7883ab20401fcd543428a97e4e971a7de7124d2f9f3d0ec40
+69,product,The device felt premium and durable.,The device felt cheap and fragile.,positive,negative,discovery,fd0f64da6134664b2a8e2c5167a6e15a7e7c13456d1e59bc42b44ca9aa12d37a
+71,book,The book was fascinating.,The book was tedious.,positive,negative,discovery,1282e738129fa4c7c84fa386cd70ae7b8ffe476345359419b707ba69f048ae95
+72,book,The novel was beautifully written.,The novel was poorly written.,positive,negative,discovery,acd527a665db79ea4f0f98996f4e9d348f152e2ed506fddd67bf5d60b9b4d549
+75,book,The narrative was engaging.,The narrative was boring.,positive,negative,discovery,900eaf73ed15af5d1a1269129bfcd98691d58b3fde025d0d0308a2d62abd495c
+76,book,The ideas were thought-provoking.,The ideas were superficial.,positive,negative,discovery,c2e7d59a929ad5bf630a58bd92b22001dabc973a07ceeceb07de1a191a1665a6
+77,book,The writing style was elegant.,The writing style was awkward.,positive,negative,discovery,801a0d17d4cd4d422b56c248d70ccb7c2f49f77ee10af9a44919fa1e7676e1a3
+80,book,The book provided an excellent reading experience.,The book provided a disappointing reading experience.,positive,negative,discovery,1e9d81bbc81a7149701a6470bcac27701a868638f0eee0df51496fe4ecbec61d
+81,general,The presentation was impressive.,The presentation was disappointing.,positive,negative,discovery,44769c07eacd9e59592f21e295cc8afe306996b359c799823a0cfdecf2dc9fe7
+82,general,The lecture was informative.,The lecture was confusing.,positive,negative,discovery,c368e2d99da81f273b9ce79034affd55dbde3c652eee752577948fb58727d753
+83,general,The meeting was productive.,The meeting was unproductive.,positive,negative,discovery,e010cc276e80392313bc0b2ff14b4239d27ed13ad0761a8fe19747fed0c3ab05
+84,general,The project was successful.,The project was unsuccessful.,positive,negative,discovery,6846d3cc6cd70ac40d0d4c3f5bb6695fed23a4ad869bd6ee0bfb8834993ef1db
+89,general,The event was enjoyable.,The event was unpleasant.,positive,negative,discovery,c8a7b6673f8438219b7e887ea1b1a85c80749117b8225070d83d20e6cd6400ef
+90,general,The discussion was constructive.,The discussion was destructive.,positive,negative,discovery,0697b4349f16ebf397a083ff16cc071d682c9f5331422898b900c9f4cc3f771a
+93,general,The decision was sensible.,The decision was foolish.,positive,negative,discovery,f6c2904c57d7a93f5000ca050d26610261f094e4265d905a2c1c0646400c28b1
+94,general,The process was efficient.,The process was inefficient.,positive,negative,discovery,642f264d675f46db99a24aa913a5555b60005e3a9665c54d984fa2118758c65c
+95,general,The outcome was favorable.,The outcome was unfavorable.,positive,negative,discovery,1c1ec2d1b011939794bead76c7625f40aa24bf6eb119e313cdcef61cb6148566
+97,general,The overall result exceeded expectations.,The overall result fell below expectations.,positive,negative,discovery,7eb985cbd39d2d2ef27b89e10ff32179772497c4e1b9a436990a741ba15b45f4
+99,general,The project progressed smoothly.,The project progressed poorly.,positive,negative,discovery,5eaa3caba2fa2ec5792529bb636fe5e0654ec0433187a0e6b525216ede2a1e70
+100,general,The final result was remarkably successful.,The final result was remarkably unsuccessful.,positive,negative,discovery,72eef6225f3a3928ad6a7123a1c65c285cf0d9622bb450e80290c2d6f84e6fb4

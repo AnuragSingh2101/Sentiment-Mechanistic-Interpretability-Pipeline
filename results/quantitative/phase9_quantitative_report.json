@@ -1,0 +1,205 @@
+{
+  "phase": 9,
+  "name": "quantitative_statistical_analysis",
+  "candidate_heads": [
+    "L8H9",
+    "L9H2",
+    "L10H4"
+  ],
+  "total_pairs": 20,
+  "confidence_level": 0.95,
+  "phase6_candidate_statistics": [
+    {
+      "head": "L8H9",
+      "n": 20,
+      "mean_recovery": 0.14275673785932846,
+      "median_recovery": 0.1513674219299197,
+      "std_recovery": 0.049541352273938036,
+      "standard_error": 0.011077783138178922,
+      "ci95_low": 0.11957067128160122,
+      "ci95_high": 0.16594280443705572,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 2.8815672424514696
+    },
+    {
+      "head": "L9H2",
+      "n": 20,
+      "mean_recovery": 0.16741063437750536,
+      "median_recovery": 0.14891856876340964,
+      "std_recovery": 0.06388307467744878,
+      "standard_error": 0.01428468975904709,
+      "ci95_low": 0.13751243510205977,
+      "ci95_high": 0.19730883365295096,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 2.6205788500753333
+    },
+    {
+      "head": "L10H4",
+      "n": 20,
+      "mean_recovery": 0.22264202013224668,
+      "median_recovery": 0.23425350421017577,
+      "std_recovery": 0.06139554384951863,
+      "standard_error": 0.013728460956309278,
+      "ci95_low": 0.19390802112068606,
+      "ci95_high": 0.2513760191438073,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 3.6263547184783556
+    }
+  ],
+  "phase7_statistics": [
+    {
+      "condition": "L10H4 + L9H2 + L8H9",
+      "n": 20,
+      "mean_recovery": 0.5466720854245801,
+      "median_recovery": 0.5442902777489781,
+      "std_recovery": 0.08033695751212479,
+      "ci95_low": 0.5090732319409608,
+      "ci95_high": 0.5842709389081995,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 6.80473971574134
+    },
+    {
+      "condition": "L10H4 + L9H2",
+      "n": 20,
+      "mean_recovery": 0.4026487919630123,
+      "median_recovery": 0.39761416961067164,
+      "std_recovery": 0.09448138609482988,
+      "ci95_low": 0.3584301421321092,
+      "ci95_high": 0.44686744179391535,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 4.261673209989514
+    },
+    {
+      "condition": "L10H4 + L8H9",
+      "n": 20,
+      "mean_recovery": 0.3665767181163559,
+      "median_recovery": 0.366642332638003,
+      "std_recovery": 0.05817060943593396,
+      "ci95_low": 0.3393520348701123,
+      "ci95_high": 0.3938014013625995,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 6.30175137704349
+    },
+    {
+      "condition": "L9H2 + L8H9",
+      "n": 20,
+      "mean_recovery": 0.31202486062046453,
+      "median_recovery": 0.32163815983250854,
+      "std_recovery": 0.07264506099914433,
+      "ci95_low": 0.2780259255176111,
+      "ci95_high": 0.34602379572331793,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 4.295197172787009
+    },
+    {
+      "condition": "L10H4",
+      "n": 20,
+      "mean_recovery": 0.22264202013224668,
+      "median_recovery": 0.23425350421017577,
+      "std_recovery": 0.06139554384951863,
+      "ci95_low": 0.19390802112068606,
+      "ci95_high": 0.2513760191438073,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 3.6263547184783556
+    },
+    {
+      "condition": "L9H2",
+      "n": 20,
+      "mean_recovery": 0.16741063437750536,
+      "median_recovery": 0.14891856876340964,
+      "std_recovery": 0.06388307467744878,
+      "ci95_low": 0.13751243510205977,
+      "ci95_high": 0.19730883365295096,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 2.6205788500753333
+    },
+    {
+      "condition": "L8H9",
+      "n": 20,
+      "mean_recovery": 0.14275673785932846,
+      "median_recovery": 0.1513674219299197,
+      "std_recovery": 0.049541352273938036,
+      "ci95_low": 0.11957067128160122,
+      "ci95_high": 0.16594280443705572,
+      "positive_recovery_fraction": 1.0,
+      "cohens_d_vs_zero": 2.8815672424514696
+    }
+  ],
+  "single_vs_multi": [
+    {
+      "best_single_head": "L10H4",
+      "best_single_mean_recovery": 0.22264202013224668,
+      "best_multi_condition": "L10H4 + L9H2 + L8H9",
+      "best_multi_mean_recovery": 0.5466720854245801,
+      "absolute_improvement": 0.32403006529233347,
+      "relative_improvement": 1.4553859379279055
+    }
+  ],
+  "pairwise_comparisons": [
+    {
+      "head_a": "L8H9",
+      "head_b": "L9H2",
+      "n_pairs": 20,
+      "mean_a": 0.14275673785932846,
+      "mean_b": 0.16741063437750536,
+      "mean_difference_a_minus_b": -0.0246538965181769,
+      "median_difference": -0.02847701952839364,
+      "ci95_low": -0.06493392369746531,
+      "ci95_high": 0.01562613066111152,
+      "paired_cohens_d": -0.28645409531465266,
+      "a_wins_fraction": 0.45
+    },
+    {
+      "head_a": "L8H9",
+      "head_b": "L10H4",
+      "n_pairs": 20,
+      "mean_a": 0.14275673785932846,
+      "mean_b": 0.22264202013224668,
+      "mean_difference_a_minus_b": -0.07988528227291823,
+      "median_difference": -0.07871204268936645,
+      "ci95_low": -0.12434021920398836,
+      "ci95_high": -0.035430345341848114,
+      "paired_cohens_d": -0.8410193680539673,
+      "a_wins_fraction": 0.2
+    },
+    {
+      "head_a": "L9H2",
+      "head_b": "L10H4",
+      "n_pairs": 20,
+      "mean_a": 0.16741063437750536,
+      "mean_b": 0.22264202013224668,
+      "mean_difference_a_minus_b": -0.055231385754741326,
+      "median_difference": -0.05811198156201475,
+      "ci95_low": -0.09769979399404989,
+      "ci95_high": -0.01276297751543276,
+      "paired_cohens_d": -0.6086661895613285,
+      "a_wins_fraction": 0.35
+    }
+  ],
+  "conclusions": [
+    {
+      "finding": "best_single_head",
+      "value": "L10H4",
+      "metric": 0.22264202013224668,
+      "interpretation": "This candidate head had the largest mean causal recovery among the three Phase 8 candidate heads."
+    },
+    {
+      "finding": "best_multi_head_condition",
+      "value": "L10H4 + L9H2 + L8H9",
+      "metric": 0.5466720854245801,
+      "interpretation": "This condition had the largest mean recovery among the tested Phase 7 conditions."
+    },
+    {
+      "finding": "largest_activation_difference",
+      "value": "L10H4",
+      "metric": 0.6081767678260803,
+      "interpretation": "This head showed the largest clean-vs-corrupted activation difference among the candidate heads."
+    },
+    {
+      "finding": "multi_head_vs_single_head",
+      "value": "L10H4 + L9H2 + L8H9",
+      "metric": 0.32403006529233347,
+      "interpretation": "Difference between the best tested multi-head condition and the best candidate single head."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & Temporary files
+*.log
+*.tmp
+*.temp
+
+# Model/checkpoint/tensor files
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Large activation cache folders
+data/activations/
+data/expanded_activations/
+
+# Ignored experiment outputs
+results/raw/*
+results/processed/*
+!results/raw/.gitkeep
+!results/processed/.gitkeep
