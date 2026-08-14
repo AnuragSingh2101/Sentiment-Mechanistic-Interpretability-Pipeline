@@ -1,0 +1,19 @@
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.pyrefly]
+typeCheckingMode = "off"
+
+[project]
+name = "mechanistic-interpretability"
+version = "0.1.0"
+description = "Sentiment Mechanistic Interpretability Pipeline"
+dependencies = [
+    "torch",
+    "transformer-lens",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scipy",
+]

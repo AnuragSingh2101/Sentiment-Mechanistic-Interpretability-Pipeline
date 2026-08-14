@@ -68,10 +68,7 @@ import torch
 from transformer_lens.model_bridge import TransformerBridge
 
 
-# ============================================================================
 # PROJECT CONFIGURATION
-# ============================================================================
-
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 MODEL_NAME = "gpt2"
